@@ -4,6 +4,8 @@ import PlusIcon from "./assets/icons/Plus-Regular.svg?react";
 import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import TrashIcon from "./assets/icons/Trash-Regular.svg?react";
 import XIcon from "./assets/icons/X-Regular.svg?react";
+import Badge from "./components/badge";
+import Button from "./components/Button";
 import Icon from "./components/icon";
 import Text from "./components/text";
 export default function App() {
@@ -25,6 +27,16 @@ export default function App() {
       <Icon svg={SpinnerIcon} animate/>
       <Icon svg={XIcon}/>
    </div>
+
+   <div>
+    <Badge variant="secondary">5</Badge>
+    <Badge variant="primary">2 de 5</Badge>
+   </div>
+
+   <div>
+    <Button icon={PlusIcon}>Nova tarefa</Button>
+   </div>
+
   </div> 
   )
 }
